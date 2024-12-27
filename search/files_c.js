@@ -1,6 +1,19 @@
 var searchData=
 [
-  ['type_5finference_2eh_410',['type_inference.h',['../df/da1/type__inference_8h.html',1,'']]],
-  ['type_5fvalidation_2ec_411',['type_validation.c',['../d2/d71/type__validation_8c.html',1,'']]],
-  ['type_5fvalidation_2eh_412',['type_validation.h',['../d8/d62/type__validation_8h.html',1,'']]]
+  ['scope_5ftracker_2ec_0',['scope_tracker.c',['../dd/d4a/scope__tracker_8c.html',1,'']]],
+  ['scope_5ftracker_2eh_1',['scope_tracker.h',['../d3/d28/scope__tracker_8h.html',1,'']]],
+  ['scope_5fvalidation_2ec_2',['scope_validation.c',['../d6/da5/scope__validation_8c.html',1,'']]],
+  ['scope_5fvalidation_2eh_3',['scope_validation.h',['../de/d19/scope__validation_8h.html',1,'']]],
+  ['semantic_5fchecks_2eh_4',['semantic_checks.h',['../d2/dd9/semantic__checks_8h.html',1,'']]],
+  ['stack_2ec_5',['stack.c',['../d3/dbb/stack_8c.html',1,'']]],
+  ['stack_2eh_6',['stack.h',['../d7/de0/stack_8h.html',1,'']]],
+  ['stack_5fframe_2ec_7',['stack_frame.c',['../db/da0/stack__frame_8c.html',1,'']]],
+  ['stack_5fframe_2eh_8',['stack_frame.h',['../d8/dca/stack__frame_8h.html',1,'']]],
+  ['stack_5fmanagement_2ec_9',['stack_management.c',['../d5/dae/stack__management_8c.html',1,'']]],
+  ['stack_5fmanagement_2eh_10',['stack_management.h',['../d1/d90/stack__management_8h.html',1,'']]],
+  ['struct_5faccess_5fformat_2ec_11',['struct_access_format.c',['../d5/d2b/struct__access__format_8c.html',1,'']]],
+  ['structure_2ec_12',['structure.c',['../df/d20/structure_8c.html',1,'']]],
+  ['structure_5fmanager_2ec_13',['structure_manager.c',['../d1/da1/structure__manager_8c.html',1,'']]],
+  ['structure_5fmanager_2eh_14',['structure_manager.h',['../db/d18/structure__manager_8h.html',1,'']]],
+  ['structure_5fresolution_2ec_15',['structure_resolution.c',['../d3/d86/structure__resolution_8c.html',1,'']]]
 ];

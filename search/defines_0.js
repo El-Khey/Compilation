@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foreach_5fnode_5ftype_667',['FOREACH_NODE_TYPE',['../d5/d1e/node__type_8h.html#a8f5b218de0103f61047220e7823c818c',1,'node_type.h']]]
+  ['buffer_5fsize_0',['buffer_size',['../d1/d06/input_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'BUFFER_SIZE:&#160;input.c'],['../d6/db1/print_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'BUFFER_SIZE:&#160;print.c']]]
 ];

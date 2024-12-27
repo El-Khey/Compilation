@@ -1,0 +1,5 @@
+<map id="fprintf_stack_frame" name="fprintf_stack_frame">
+<area shape="rect" id="Node000001" title="Prints a detailed representation of a stack frame." alt="" coords="185,5,336,31"/>
+<area shape="rect" id="Node000002" href="$d5/dae/stack__management_8c.html#adef4d70a6b734e6c672b820d9e77024f" title="Prints the contents of the execution stack." alt="" coords="5,5,137,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,21,138,21,138,15,172,15"/>
+</map>

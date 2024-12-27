@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['generate_5fenum_668',['GENERATE_ENUM',['../d5/d1e/node__type_8h.html#aed8760364c7992625d06c93d12b2496d',1,'node_type.h']]],
-  ['generate_5fstring_669',['GENERATE_STRING',['../d5/d1e/node__type_8h.html#adf58d994c35f18ec84b628d8321f52e5',1,'node_type.h']]]
+  ['foreach_5fnode_5ftype_0',['FOREACH_NODE_TYPE',['../d5/d1e/node__type_8h.html#a8f5b218de0103f61047220e7823c818c',1,'node_type.h']]]
 ];
