@@ -21,11 +21,10 @@
 
 #define MAX_REGION_COUNT 50 // Maximum number of regions that can be managed.
 
-
 /**
  * @struct Region
  * @brief Represents a region in the compiler.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * This struct represents a region in the compiler. It includes information
  * about the size of the region, the static nesting level in the region, and
  * the Abstract Syntax Tree (AST) for the region.
@@ -36,10 +35,9 @@ typedef struct Region {
     AST ast;            // Abstract Syntax Tree
 } Region;
 
-
 /**
  * @brief Constructs a new region with the given size and NIS.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param size The size of the region.
  * @param nis The static nesting level in the region.
  * @return A new Region object.
@@ -48,28 +46,28 @@ Region construct_region(int size, int nis);
 
 /**
  * @brief Initializes the region table.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * This function sets up the region table for managing regions.
  */
 void init_region_table();
 
 /**
  * @brief Starts a new region.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * This function begins a new region in the region table.
  */
 void start_region();
 
 /**
  * @brief Ends the current region.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * This function ends the current region in the region table.
  */
 void end_region();
 
 /**
  * @brief Inserts a new region row into the region table.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param index The index of the region.
  * @param size The size of the region.
  * @param nis The NIS of the region.
@@ -79,7 +77,7 @@ void insert_region_row(int index, int size, int nis, AST ast);
 
 /**
  * @brief Gets the size of the region at the specified index.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param index The index of the region.
  * @return The size of the region.
  */
@@ -87,28 +85,28 @@ int get_region_size(int index);
 
 /**
  * @brief Gets the NIS of the current region.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @return The NIS of the current region.
  */
 int get_region_nis();
 
 /**
  * @brief Gets the NIS of the current region.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @return The NIS of the current region.
  */
 int get_current_region_nis();
 
 /**
  * @brief Gets the ID of the current region.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @return The ID of the current region.
  */
 int get_current_region_id();
 
 /**
  * @brief Gets the AST of the region at the specified index.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param index The index of the region.
  * @return The AST of the region.
  */
@@ -116,7 +114,7 @@ AST get_region_ast(int index);
 
 /**
  * @brief Updates the size of the region at the specified index.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param index The index of the region.
  * @param size The new size of the region.
  */
@@ -124,7 +122,7 @@ void update_region_size(int index, int size);
 
 /**
  * @brief Updates the AST of the region at the specified index.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param index The index of the region.
  * @param ast The new AST of the region.
  */
@@ -132,14 +130,14 @@ void update_region_ast(int index, AST ast);
 
 /**
  * @brief Exports the region table to a file.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * @param filename The name of the file to write the region table to.
  */
 void export_region_table(const char* filename);
 
 /**
  * @brief Prints the region table.
- *
+ * @author Benguezzou Mohamed, Djibril Benmamar
  * This function prints the current state of the region table.
  */
 void fprintf_region_table();

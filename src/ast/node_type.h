@@ -1,3 +1,19 @@
+/**
+ * @file node_type.h
+ * @brief Definition and utilities for AST node types.
+ *
+ * This file contains the enumeration of Abstract Syntax Tree (AST) node types
+ * and utility functions for converting node types to their corresponding
+ * operators or string representations. It uses macros to simplify the definition
+ * of enums and associated strings.
+ *
+ * @authors
+ * - Benguezzou Mohamed
+ * - Benmamar Djibril
+ *
+
+ */
+
 #ifndef __NODE_TYPE_H__
 #define __NODE_TYPE_H__
 

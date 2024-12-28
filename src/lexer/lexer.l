@@ -1,3 +1,10 @@
+/**
+ * @file lexer.l
+ *
+ * @authors Benmamar Djibril, Benguezzou Mohamed, Fizser Andrea
+ *
+ */
+
 %{
     #include "../symbol_table/lexeme/lexeme_table.h"
     #include "../parser/parser.h"

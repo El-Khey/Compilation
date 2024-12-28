@@ -1,5 +1,8 @@
 {
     "files.associations": {
+        "*.page-template": "vue",
+        "*.layout-template": "vue",
+        "*.vue": "vue",
         "*.rmd": "markdown",
         "address_calculation.h": "c",
         "stack_management.h": "c",
@@ -13,6 +16,10 @@
         "type_inference.h": "c",
         "representation_table.h": "c",
         "formatting.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "ast.h": "c",
+        "colors.h": "c",
+        "scope_tracker.h": "c",
+        "declaration_table.h": "c"
     }
 }

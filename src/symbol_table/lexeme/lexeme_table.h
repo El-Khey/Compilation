@@ -19,11 +19,10 @@
 #define MAX_LEXEME_LENGTH 100    // Maximum length of a lexeme.
 #define MAX_LEXEME_COUNT 500     // Maximum number of lexemes in the table.
 
-
 /**
  * @struct Lexeme
  * @brief Represents a lexical token with its attributes.
- * 
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * The `Lexeme` struct is used to store information about a lexical token,
  * including its text representation (lexeme), its length, and a reference to the
  * next lexeme or position in a list or table.
@@ -36,7 +35,7 @@ typedef struct {
 
 /**
  * @brief Constructs a new lexeme with the given character sequence, length, and next index.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param lexeme The character sequence of the lexeme.
  * @param length The length of the lexeme.
  * @param next The index of the next lexeme in the table.
@@ -46,7 +45,7 @@ Lexeme construct_lexeme(const char* lexeme, int length, int next);
 
 /**
  * @brief Initializes the lexeme table.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function sets up the lexeme table, preparing it for the insertion
  * of lexemes.
  */
@@ -54,7 +53,7 @@ void init_lexeme_table();
 
 /**
  * @brief Inserts a lexeme into the lexeme table.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function adds a new lexeme to the lexeme table.
  *
  * @param lexeme The lexeme to be inserted.
@@ -64,7 +63,7 @@ int insert_lexeme(const char* lexeme);
 
 /**
  * @brief Inserts a lexeme row into the lexeme table.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function adds a new lexeme to the lexeme table at the specified index.
  *
  * @param index The index at which to insert the lexeme.
@@ -76,7 +75,7 @@ void insert_lexeme_row(int index, const char* lexeme, int length, int next);
 
 /**
  * @brief Retrieves the lexeme at the given index.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function returns the lexeme stored at the specified index in the lexeme table.
  *
  * @param index The index of the lexeme to retrieve.
@@ -86,7 +85,7 @@ char *get_lexeme(int index);
 
 /**
  * @brief Finds the index of a lexeme in the lexeme table.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function searches for a lexeme in the lexeme table and returns its index.
  *
  * @param lexeme The lexeme to search for.
@@ -96,7 +95,7 @@ int find_lexeme_index(const char* lexeme);
 
 /**
  * @brief Exports the lexeme table to a file.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function writes the contents of the lexeme table to a file.
  *
  * @param filename The name of the file to write the lexeme table to.
@@ -105,7 +104,7 @@ void export_lexeme_table(const char* filename);
 
 /**
  * @brief Prints the contents of the lexeme table.
- *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function outputs the current state of the lexeme table, displaying
  * all stored lexemes and their associated information.
  */

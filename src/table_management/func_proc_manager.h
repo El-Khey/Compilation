@@ -18,7 +18,7 @@
 /**
  * @struct func_proc_manager_context
  * @brief Structure to hold context information for function and procedure declarations.
- * 
+ * @author Benguezzou Mohamed
  * This structure is used to hold information retrieved from our grammar rules, such as
  * the number of parameters, the return type, and the lexicographic order of the function
  * or procedure name. 
@@ -38,7 +38,7 @@ typedef struct func_proc_manager_context
 
 /**
  * @brief Constructs the context for a function or procedure declaration.
- *
+ * @author Benguezzou Mohamed
  * @param index_func_proc_name_lexicographic Index representing the lexicographic order of the function or procedure name.
  */
 void construct_func_proc_manager_context(int index_func_proc_name_lexicographic);
@@ -53,12 +53,13 @@ void func_proc_add_parameter(int index_lexeme_lexicographic, int index_type_lexi
 
 /**
  * @brief Starts the declaration of a function.
+ * @author Benguezzou Mohamed
  */
 void declaration_func_start();
 
 /**
  * @brief Updates the return type of the current function.
- *
+ * @author Benguezzou Mohamed
  * @param index_return_type_lexicographic Index representing the lexicographic order of the return type.
  */
 void update_declaration_func_return_type(int index_return_type_lexicographic);
@@ -70,6 +71,7 @@ void declaration_proc_start();
 
 /**
  * @brief Ends the declaration of a function or procedure.
+ * @author Benguezzou Mohamed
  */
 void declaration_func_proc_end();
 

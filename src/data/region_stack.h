@@ -23,47 +23,52 @@
 * @brief Initializes the region stack.
 *
 * This function initializes the region stack, preparing it for use.
+* 
+* @author Benguezzou Mohamed, Fiszer Andrea
 */
 void init_stack_region();
 
 /**
  * @brief Pushes a region onto the stack.
- *
+ * 
+ * @author Benguezzou Mohamed, Fiszer Andrea
  * @param region_index The index of the region to push onto the stack.
  */
 void push_region(int region_index);
 
 /**
  * @brief Pops a region from the stack.
- *
+ * 
+ * @author Benguezzou Mohamed, Fiszer Andrea
  * @return The index of the region that was popped from the stack.
  */
 int pop_region();
 
 /**
  * @brief Peeks at the top region of the stack without removing it.
- *
+ * 
+ * @author Benguezzou Mohamed
  * @return The index of the region at the top of the stack.
  */
 int peek_region();
 
 /**
  * @brief Gets the size of the region stack.
- *
+ * @author Benguezzou Mohamed, Fiszer Andrea
  * @return The number of regions currently in the stack.
  */
 int get_region_stack_size();
 
 /**
  * @brief Retrieves the region stack.
- *
+ * @author Benguezzou Mohamed, Fiszer Andrea
  * @return The region stack.
  */
 Stack get_region_stack();
 
 /**
  * @brief Prints the contents of the region stack.
- *
+ * @author Benguezzou Mohamed, Fiszer Andrea
  * This function prints the contents of the region stack to the standard output.
  */
 void print_stack_region();

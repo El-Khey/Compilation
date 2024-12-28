@@ -38,6 +38,7 @@ typedef enum
 /**
  * @struct Declaration
  * @brief Structure representing a declaration. A declaration includes information
+ * @author Benguezzou Mohamed Fiszer Andrea
  * about its nature, the index of the next declaration, the region of the declaration,
  * the description of the declaration, and the execution information of the declaration.
  */
@@ -51,12 +52,13 @@ typedef struct {
 
 /**
  * @brief Initializes the declaration table.
+ * @author Benguezzou Mohamed Fiszer Andrea
  */
 void init_declaration_table();
 
 /**
  * @brief Inserts a declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param nature Nature of the declaration.
  * @param region Region of the declaration.
@@ -67,7 +69,7 @@ void insert_declaration(int index, Nature nature, int region, int description, i
 
 /**
  * @brief Inserts a variable declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -77,7 +79,7 @@ void insert_declaration_var(int index, int region, int description, int executio
 
 /**
  * @brief Inserts an array declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -86,7 +88,7 @@ void insert_declaration_array(int index, int region, int description);
 
 /**
  * @brief Inserts a structure declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -95,7 +97,7 @@ void insert_declaration_struct(int index, int region, int description);
 
 /**
  * @brief Inserts a function declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -104,7 +106,7 @@ void insert_declaration_func(int index, int region, int description);
 
 /**
  * @brief Inserts a procedure declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -113,7 +115,7 @@ void insert_declaration_proc(int index, int region, int description);
 
 /**
  * @brief Inserts a parameter declaration into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param region Region of the declaration.
  * @param description Description of the declaration.
@@ -123,7 +125,7 @@ void insert_declaration_param(int index, int region, int description, int execut
 
 /**
  * @brief Inserts a declaration row into the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index at which to insert the declaration.
  * @param nature Nature of the declaration.
  * @param next Index of the next declaration.
@@ -137,13 +139,13 @@ void insert_declaration_row(int index, Nature nature, int next, int region, int 
  * @brief Finds the index of a declaration with the specified lexicographic index.
  * This function is used to ensure that a declaration with the specified lexicographic
  * index exists in the table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * If the declaration does not exist, it means that the declaration is using an undeclared
  * variable, type, which is an error.
- * 
+ *
  * The search is performed by exploring the stack of regions and checking each region for
  * the declaration.
- * 
+ *
  * @param index Index to search for.
  * @return Index of the declaration if found, otherwise -1.
  */
@@ -168,7 +170,7 @@ int find_declaration_index_by_nature(int tlex_index, Nature nature);
 
 /**
  * @brief Gets the nature of a declaration.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return Nature of the declaration.
  */
@@ -176,7 +178,7 @@ int get_declaration_nature(int index);
 
 /**
  * @brief Gets the description of a declaration.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return Description of the declaration.
  */
@@ -184,7 +186,7 @@ int get_declaration_description(int index);
 
 /**
  * @brief Gets the region of a declaration.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return Region of the declaration.
  */
@@ -192,7 +194,7 @@ int get_declaration_region(int index);
 
 /**
  * @brief Gets the execution information of a declaration.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return Execution information of the declaration.
  */
@@ -202,14 +204,14 @@ int get_declaration_execution(int index);
  * @brief Gets the lexicographic index of a declaration.
  * The objective is to find the first declaration in the chain of declarations
  * that is the genitor of the declaration. Because the first declaration index in the
- * chain is linked to the lexicographic index, this way we are able to find the lexeme of 
+ * chain is linked to the lexicographic index, this way we are able to find the lexeme of
  * of type that is inside the overflown zone.
- * 
+ *
  * Why do we need this? It is used only to further improve the error messages.
  * A declaration of variable can have a type that is stored in the overflown zone.
  * Making it impossible to get the lexeme out of the declaration index. So we need to
  * find the first declaration in the chain that is linked to the lexeme.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return Lexicographic index of the declaration.
  */
@@ -217,14 +219,14 @@ int get_declaration_lexicographic_index(int index);
 
 /**
  * @brief Gets the declaration table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @return Pointer to the declaration table.
  */
 Declaration *get_declaration_table();
 
 /**
  * @brief Updates the execution information of a declaration.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @param execution New execution information.
  */
@@ -232,21 +234,21 @@ void update_declaration_execution(int index, int execution);
 
 /**
  * @brief Exports the declaration table to a file.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param filename Name of the file to write the declaration table to.
  */
 void export_declaration_table(const char* filename);
 
 /**
  * @brief Prints the declaration table.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param out File stream to write the declaration table to.
  */
 void fprintf_declaration_table(FILE* out);
 
 /**
  * @brief Converts a nature to a string representation.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param nature Nature to convert.
  * @return String representation of the nature.
  */
@@ -284,7 +286,7 @@ static inline char *nature_to_string_short(Nature nature)
 
 /**
  * @brief Checks if a declaration is a base type.
- * 
+ * @author Benguezzou Mohamed Fiszer Andrea
  * @param index Index of the declaration.
  * @return 1 if the declaration is a base type, otherwise 0.
  */

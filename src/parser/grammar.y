@@ -1,3 +1,9 @@
+/**
+ * @file grammar.y
+ *
+ * @authors Benmamar Djibril, Benguezzou Mohamed, Fizser Andrea
+ */
+ 
 %{
     #include "../table_management/func_proc_manager.h"
     #include "../table_management/structure_manager.h"
