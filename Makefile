@@ -1,17 +1,9 @@
-# ########################################################
-#	     _                                      _        #
-#	    / \   _ __ __ _  ___  _ __   __ _ _   _| |_ 	 #
-#	   / _ \ | '__/ _` |/ _ \| '_ \ / _` | | | | __|	 #
-#	  / ___ \| | | (_| | (_) | | | | (_| | |_| | |_ 	 #
-#	 /_/   \_\_|  \__, |\___/|_| |_|\__,_|\__,_|\__|	 #
-#	              |___/                             	 #
-# ########################################################
-#														 #	
 # ====================================================== #
 #           C O M P I L A T I O N   S E T U P          	 #
 # ====================================================== # 
 #             defines the compiler and flags             #
 # ------------------------------------------------------ #
+
 CC      = gcc
 CFLAGS  = -g
 LEX     = lex
@@ -48,10 +40,7 @@ all: compiler vm simple-clean
 
 install: 
 	sudo apt install flex bison
-	sudo apt install doxygen
 
-docs:
-	doxygen Doxyfile
 
 # ====================================================== #
 #                     C O M P I L E R                    #
@@ -100,8 +89,6 @@ vm_parser: $(SRC_DIR)/parser/interpreter_grammar.y
 
 ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
-test: compiler simple-clean
-	PYTHONPATH=$(TESTS_DIR) python3 tests/regression/main.py $(ARGS)
 
 # ====================================================== # 
 #                      C L E A N I N G                   #
@@ -115,6 +102,4 @@ simple-clean:
 
 clean: simple-clean
 	rm -f *.exe $(BIN_DIR)/*.tab.c $(BIN_DIR)/*.tab.h $(BIN_DIR)/lex.yy.c && \
-	rm -rf tests/**/__pycache__
-	rm -rf ./.pytest_cache/
 	rm -f log.txt

@@ -8,12 +8,12 @@ type date : struct  {
 
 
 
-func my_func() -> date {
+func my_func() -> date {        // The function must return a value of a base type
     var x : date;
-    return x;
+    return x;                   
 }
 
-proc my_proc(today : date) {
+proc my_proc(today : date) {    // Parameters should be of a base type
     var x : date;
     x := today;
 } 

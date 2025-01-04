@@ -11,6 +11,8 @@
  * matches the declared type of the variable. If a type mismatch occurs, it logs an error
  * with detailed information about the location and the types involved.
  * 
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable being assigned.
  * @param expression A pointer to the `Node` representing the expression being assigned.
  */
@@ -18,10 +20,12 @@ void check_variable_assignment(int index_lexeme_lexicographic, Node *expression)
 
 /**
  * @brief Validates type compatibility for array assignments.
- * 
- * This function verifies that the type of an expression matches the type of an array 
+ *
+ * This function verifies that the type of an expression matches the type of an array
  * element during assignments. If the types are incompatible, an error is logged with
  * a detailed message.
+ *
+ * @author Benguezzou Mohamed, Benmamar Djibril 
  * 
  * @param array A pointer to the `Node` representing the array being accessed.
  * @param expression A pointer to the `Node` representing the expression being assigned.
@@ -30,10 +34,12 @@ void check_array_assignment(Node *array, Node *expression);
 
 /**
  * @brief Ensures type compatibility for struct field assignments.
- * 
+ *
  * This function checks whether the type of an expression being assigned to a struct
  * field matches the declared type of that field. If there is a mismatch, an error is logged,
  * providing information about the types and the location of the assignment.
+ *
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * 
  * @param structure A pointer to the `Node` representing the struct field being accessed.
  * @param expression A pointer to the `Node` representing the expression being assigned.

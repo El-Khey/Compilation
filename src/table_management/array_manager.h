@@ -21,7 +21,8 @@
  * This structure holds information about the array such as its size,
  * the lexicographic index of its name, the number of dimensions, and
  * the index representation of the number of dimensions.
- * @author Djibril Benmamar
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 typedef struct array_manager_context
 {
@@ -37,7 +38,8 @@ typedef struct array_manager_context
  * @brief Constructs the array manager context.
  * Initializes the array manager context with the given lexicographic index
  * of the current array name.
- * @author Djibril Benmamar
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param current_array_name_lexicographic_index The lexicographic index of the current array name.
  */
@@ -46,14 +48,14 @@ void construct_array_manager_context(int current_array_name_lexicographic_index)
 /**
  * @brief Starts the declaration of an array.
  * This function should be called at the beginning of an array declaration.
- * @author Djibril Benmamar
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_array_start();
 
 /**
  * @brief Adds a dimension to the array.
- * @author Djibril Benmamar
  * This function adds a dimension to the array with the specified minimum and maximum values.
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param min The minimum value of the dimension.
  * @param max The maximum value of the dimension.
@@ -62,8 +64,8 @@ void array_add_dimension(int min, int max);
 
 /**
  * @brief Ends the declaration of an array.
- * @author Djibril Benmamar
  * This function should be called at the end of an array declaration.
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_array_end();
 

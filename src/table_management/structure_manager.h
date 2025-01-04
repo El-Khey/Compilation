@@ -16,10 +16,11 @@
 /**
  * @struct structure_manager_context
  * @brief Context for managing structure declarations.
- * @author Benguezzou Mohamed
  * This structure holds the context information needed for managing
  * structure declarations, including indices for field representation
  * and structure name, as well as execution offset and number of fields.
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 typedef struct structure_manager_context
 {
@@ -32,9 +33,10 @@ typedef struct structure_manager_context
 
 /**
  * @brief Constructs the structure manager context.
- * @author Benguezzou Mohamed
  * This function initializes the structure manager context with the given
  * index for the structure name in lexicographic order.
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param index_struct_name_lexicographic Index for the structure name in lexicographic order.
  */
@@ -42,8 +44,9 @@ void construct_structure_manager_context(int index_struct_name_lexicographic);
 
 /**
  * @brief Starts the declaration of a structure.
- * @author Benguezzou Mohamed
  * This function marks the beginning of a structure declaration.
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_structure_start();
 
@@ -53,6 +56,8 @@ void declaration_structure_start();
  * This function adds a field to the current structure being declared,
  * using the provided indices for the lexeme and type in lexicographic order.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param index_lexeme_lexicographic Index for the lexeme in lexicographic order.
  * @param index_type_lexicographic Index for the type in lexicographic order.
  */
@@ -60,8 +65,9 @@ void structure_add_field(int index_lexeme_lexicographic, int index_type_lexicogr
 
 /**
  * @brief Ends the declaration of a structure.
- * @author Benguezzou Mohamed
  * This function marks the end of a structure declaration.
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_structure_end();
 

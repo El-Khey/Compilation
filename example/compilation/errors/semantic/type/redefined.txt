@@ -9,3 +9,6 @@ type date : struct  {
 type date : struct  {
     annee : float;
 } fstruct;
+
+var x : int;
+var x : float;

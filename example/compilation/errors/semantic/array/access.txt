@@ -6,22 +6,17 @@ type date : struct  {
     annee : float;
 } fstruct;
 
-type personne : struct  {
-    numero : int;
-    naissance : date;
-    age : int;
-    taille : float;
-} fstruct;
 
-var p : personne;
+var p : date;
 var x : int;
 var z : x;          // Error : type x undefined
 
 type my_tab : array[0: 10] of int;
 var y : my_tab;
 
-p.naissance.jour := 5;
+p.jour := 5;
 
-// Error
+// Error 
 z[0] := 1;
 y[0].jour := 1; // y[0] is an int, not a struct
+

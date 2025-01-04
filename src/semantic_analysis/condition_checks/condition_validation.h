@@ -3,11 +3,11 @@
 
 /**
  * @brief Validates the type of a condition expression.
- * 
- * This function ensures that the condition provided for a control structure (e.g., if, while) 
- * is a valid boolean expression. If the condition is not a boolean, an error is logged with 
+ *
+ * This function ensures that the condition provided for a control structure (e.g., if, while)
+ * is a valid boolean expression. If the condition is not a boolean, an error is logged with
  * detailed information about the type mismatch and the location of the issue.
- * 
+ * @authors Benguezzou Mohamed, Benmamar Djibril
  * @param condition A pointer to the `Node` representing the condition expression.
  */
 void check_condition(Node *condition);

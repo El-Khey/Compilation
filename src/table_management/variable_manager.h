@@ -15,10 +15,11 @@
 
 /**
  * @brief Starts the declaration of a variable.
- * @author Benguezzou Mohamed, Benmamar Djibril
  * This function initiates the process of declaring a variable by taking the
  * lexicographic index of the variable's name and its type.
  *
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable's name.
  * @param index_type_lexicographic The lexicographic index of the variable's type.
  */
@@ -26,10 +27,11 @@ void declaration_variable_start(int index_lexeme_lexicographic, int index_type_l
 
 /**
  * @brief Starts the declaration of a parameter.
- * @author Benguezzou Mohamed, Benmamar Djibril
  * This function initiates the process of declaring a parameter by taking the
  * lexicographic index of the parameter's name and its type.
  *
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the parameter's name.
  * @param index_type_lexicographic The lexicographic index of the parameter's type.
  */

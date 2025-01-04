@@ -8,7 +8,9 @@
  *
  * This function retrieves the declaration index of a variable or parameter
  * given the lexicographic index of the variable's name.
- *
+ * 
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable's name.
  * @return The declaration index of the variable or parameter.
  */
@@ -19,7 +21,9 @@ int get_var_param_declaration_index(int index_lexeme_lexicographic);
  *
  * This function checks if a variable has been defined in the current scope.
  * If the variable has not been defined, an error is thrown.
- *
+ * 
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable's name.
  * @param line The line where the error occurred.
  * @param column The column where the error occurred.
@@ -31,7 +35,9 @@ void check_variable_definition(int index_lexeme_lexicographic);
  *
  * This function checks if a variable has been redefined in the current scope.
  * If the variable has been redefined, an error is thrown.
- *
+ * 
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable's name.
  * @param line The line where the error occurred.
  * @param column The column where the error occurred.
@@ -44,6 +50,8 @@ void check_variable_redefinition(int index_lexeme_lexicographic);
  * This function checks the type of the expression being assigned to a variable.
  * If the assignment is invalid, an error is thrown.
  *
+ * @author Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the variable's name.
  * @param expression The expression being assigned to the variable.
  */

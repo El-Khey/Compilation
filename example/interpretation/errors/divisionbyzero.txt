@@ -1,0 +1,11 @@
+PROG
+
+var x : int;
+var y : int;
+var zz : int;
+
+x := 5;
+y := 5;
+
+zz := x / (y - 5); // Error: Division by zero
+

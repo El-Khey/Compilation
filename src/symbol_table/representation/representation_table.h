@@ -19,7 +19,7 @@
 
 /**
  * @brief Initializes the representation table.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function initializes the representation table, setting up any necessary
  * data structures and preparing the table for use.
  */
@@ -27,7 +27,7 @@ void init_representation_table();
 
 /**
  * @brief Inserts a representation into the table.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param value The value of the representation to insert.
  * @return The index at which the representation was inserted, or -1 if the table is full.
  */
@@ -35,7 +35,7 @@ int insert_representation(int value);
 
 /**
  * @brief Inserts a representation into the table at a specific index.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param index The index at which to insert the representation.
  * @param value The value of the representation to insert.
  */
@@ -43,7 +43,7 @@ void insert_representation_row(int index, int value);
 
 /**
  * @brief Updates a representation in the table.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param index The index of the representation to update.
  * @param value The new value of the representation.
  */
@@ -51,7 +51,7 @@ void update_representation(int index, int value);
 
 /**
  * @brief Retrieves the value of a representation from the table.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param index The index of the representation to retrieve.
  * @return The value of the representation at the specified index.
  */
@@ -59,14 +59,14 @@ int get_representation_value(int index);
 
 /**
  * @brief Exports the representation table to a file.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * @param filename The name of the file to write the representation table to.
  */
 void export_representation_table(const char* filename);
 
 /**
  * @brief Prints the contents of the representation table.
- * @author Benguezzou Mohamed, Benmamar Djibril, Fiszer Andrea
+ * @author Benguezzou Mohamed, Benmamar Djibril
  * This function prints the contents of the representation table to the standard output.
  * The table is printed in a tabular format, with each row containing the index and value
  *

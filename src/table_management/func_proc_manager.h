@@ -14,15 +14,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * @struct func_proc_manager_context
  * @brief Structure to hold context information for function and procedure declarations.
- * @author Benguezzou Mohamed
  * This structure is used to hold information retrieved from our grammar rules, such as
  * the number of parameters, the return type, and the lexicographic order of the function
- * or procedure name. 
- * 
+ * or procedure name.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * These information is used to fill the tables with the correct information.
  */
 typedef struct func_proc_manager_context
@@ -38,13 +38,17 @@ typedef struct func_proc_manager_context
 
 /**
  * @brief Constructs the context for a function or procedure declaration.
- * @author Benguezzou Mohamed
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param index_func_proc_name_lexicographic Index representing the lexicographic order of the function or procedure name.
  */
 void construct_func_proc_manager_context(int index_func_proc_name_lexicographic);
 
 /**
  * @brief Adds a parameter to the current function or procedure context.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param index_lexeme_lexicographic Index representing the lexicographic order of the parameter lexeme.
  * @param index_type_lexicographic Index representing the lexicographic order of the parameter type.
@@ -53,13 +57,16 @@ void func_proc_add_parameter(int index_lexeme_lexicographic, int index_type_lexi
 
 /**
  * @brief Starts the declaration of a function.
- * @author Benguezzou Mohamed
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_func_start();
 
 /**
  * @brief Updates the return type of the current function.
- * @author Benguezzou Mohamed
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ * 
  * @param index_return_type_lexicographic Index representing the lexicographic order of the return type.
  */
 void update_declaration_func_return_type(int index_return_type_lexicographic);
@@ -71,7 +78,8 @@ void declaration_proc_start();
 
 /**
  * @brief Ends the declaration of a function or procedure.
- * @author Benguezzou Mohamed
+ * 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 void declaration_func_proc_end();
 

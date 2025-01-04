@@ -25,7 +25,7 @@
  * and an integer to keep track of the index of the top element.
  * The stack can store elements of any data type by using a void pointer. The data should be cast to the appropriate
  * type when popped from the stack.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 typedef struct {
     void *data[MAX_SIZE];   // Array to store the elements of the stack.
@@ -34,7 +34,7 @@ typedef struct {
 
 /**
  * @brief Constructs a new stack.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  * @return A new stack with initialized values.
  */
 Stack construct_stack();
@@ -44,7 +44,7 @@ Stack construct_stack();
  *
  * @param stack The stack to check.
  * @return 1 if the stack is empty, 0 otherwise.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 int is_empty(const Stack stack);
 
@@ -53,13 +53,13 @@ int is_empty(const Stack stack);
  *
  * @param stack The stack to check.
  * @return 1 if the stack is full, 0 otherwise.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 int is_full(const Stack stack);
 
 /**
  * @brief Returns the size of the stack.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  * @param stack The stack to check.
  * @return The number of elements in the stack.
  */
@@ -67,7 +67,7 @@ int size(const Stack stack);
 
 /**
  * @brief Pushes a value onto the stack.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  * @param stack The stack to push the value onto.
  * @param value The value to push onto the stack.
  * @param value_size The size of the value to push (needed for allocating memory).
@@ -76,7 +76,7 @@ void push(Stack *stack, void *value, size_t value_size);
 
 /**
  * @brief Pops a value from the stack.
- * @author Benguezzou Mohamed
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  * @param stack The stack to pop the value from.
  * @return The value popped from the stack.
  */

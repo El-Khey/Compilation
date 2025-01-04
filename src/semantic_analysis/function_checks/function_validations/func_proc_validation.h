@@ -11,7 +11,8 @@
  *
  * This function retrieves the declaration index of a function or procedure based on the lexicographic index of the name.
  * If the function or procedure is not found, NULL_VALUE is returned.
- *
+ * 
+ * @authors Benguezzou Mohamed, Benmamar Djibril
  * @param index_lexeme_lexicographic The lexicographic index of the function or procedure's name.
  * @return The declaration index of the function or procedure.
  */
@@ -23,6 +24,8 @@ int get_func_proc_declaration_index(int index_lexeme_lexicographic);
  * This function checks if a function or procedure has been defined in the current scope.
  * If the function or procedure has not been defined, an error is thrown.
  *
+ * @authors Benguezzou Mohamed, Benmamar Djibril
+ * 
  * @param index_lexeme_lexicographic The lexicographic index of the function or procedure's name.
  */
 void check_func_proc_definition(int index_lexeme_lexicographic);
@@ -32,6 +35,8 @@ void check_func_proc_definition(int index_lexeme_lexicographic);
  *
  * This function checks if a function or procedure has been redefined in the current scope.
  * If the function or procedure has been redefined, an error is thrown.
+ *
+ * @authors Benguezzou Mohamed, Benmamar Djibril
  *
  * @param index_lexeme_lexicographic The lexicographic index of the function or procedure's name.
  * @param type The type of the function or procedure.
@@ -44,6 +49,8 @@ void check_func_proc_redefinition(int index_lexeme_lexicographic, char *type);
  * This function checks if the return statement of a function matches the expected return type.
  * If the return statement does not match, an error is thrown.
  *
+ * @authors Benguezzou Mohamed, Benmamar Djibril
+ *
  * @param index_lexeme_lexicographic The lexicographic index of the function's name.
  * @param return_statement The return statement provided in the function.
  */
@@ -54,6 +61,8 @@ void check_func_prototype(int index_lexeme_lexicographic, Node *return_statement
  *
  * This function checks if the arguments provided in the function call match the expected arguments.
  * If the arguments do not match, an error is thrown.
+ *
+ * @authors Benguezzou Mohamed, Benmamar Djibril
  *
  * @param index_lexeme_lexicographic The lexicographic index of the function's name.
  * @param argument_list The argument list provided in the function call.

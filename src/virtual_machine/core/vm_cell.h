@@ -13,6 +13,8 @@
  *
  * This enum is used to distinguish between the various types that a `vm_cell` can hold, such as integers,
  * floating-point numbers, booleans, characters, and strings.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 typedef enum vm_type { INTEGER, REAL, BOOLEAN, CHARACTER, STRING } vm_type;
 
@@ -22,10 +24,12 @@ typedef enum vm_type { INTEGER, REAL, BOOLEAN, CHARACTER, STRING } vm_type;
  *
  * A `vm_cell` holds a value of a specific type (as indicated by the `type` field) and includes the value
  * itself stored in a union. Additionally, it tracks whether the value has been initialized or not.
- * 
+ *
  * The `value` field is a union that can hold different types of data (integer, real, boolean, character, or string).
  * The `type` field indicates which data type is currently stored, and the `is_initialized` field marks whether
  * the cell contains a valid value.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  */
 typedef struct {
     union {
@@ -46,6 +50,8 @@ typedef struct {
  * Allocates and initializes a `vm_cell` based on the provided type and value.
  * If the value is `NULL`, the cell is marked as uninitialized.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param type The type of the cell (e.g., INTEGER, REAL, etc.).
  * @param value A pointer to the value to initialize the cell. Can be `NULL`.
  * @return A constructed `vm_cell` instance.
@@ -59,6 +65,8 @@ vm_cell construct_vm_cell(int type, void *value);
  * This function provides a generic pointer to the value stored in the given
  * `vm_cell`. The caller is responsible for interpreting the type.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param cell The `vm_cell` to extract the value from.
  * @return A pointer to the value inside the `vm_cell`.
  * @note The returned pointer must not be freed.
@@ -70,6 +78,8 @@ void *get_vm_cell_value(vm_cell cell);
  *
  * Modifies the contents of an existing `vm_cell` by assigning it a new value
  * while preserving its type. Marks the cell as initialized.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param cell A pointer to the `vm_cell` to update.
  * @param value A pointer to the new value to assign.
@@ -83,6 +93,8 @@ void update_vm_cell(vm_cell *cell, void *value);
  * Converts the contents of a `vm_cell` to a formatted string representation
  * for display purposes. Handles both initialized and uninitialized cells.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param data A pointer to the `vm_cell` to format.
  * @return A constant string representation of the cell.
  * @note The returned string is statically allocated and must not be freed.
@@ -94,6 +106,8 @@ const char *format_cell(void *data);
  *
  * Outputs the type and value of the `vm_cell` to the specified file stream,
  * formatted as a table with appropriate column headers and separators.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param out The file stream to write to.
  * @param cell The `vm_cell` to print.

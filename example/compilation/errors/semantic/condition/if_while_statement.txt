@@ -9,3 +9,8 @@ x := 1;
 if ((x > 5) || (is_red >= false)) {
     x := 0;
 }
+
+// Error: x is an int, not a float
+while(x < 5.0) {
+    x := x + 1;
+}

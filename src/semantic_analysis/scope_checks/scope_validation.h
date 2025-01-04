@@ -9,6 +9,8 @@
  * This function checks if a scope entity has been redefined in the current scope.
  * If the scope entity has been redefined, a warning is thrown.
  *
+ * @authors Benguezzou Mohamed, Benmamar Djibril
+ *
  * @param index_lexeme_lexicographic The lexicographic index of the scope entity's name.
  * @param entity_type The type of the scope entity. (function/procedure parameter, structure field)
  */

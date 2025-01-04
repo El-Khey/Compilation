@@ -7,22 +7,21 @@
 #include "../../ast/ast.h"
 #include "vm_cell.h"
 
-
-
-
 /**
  * @brief Handles the declaration of a variable by allocating memory in the stack frame.
  *
- * This function resolves the type of the variable from its declaration and delegates 
+ * This function resolves the type of the variable from its declaration and delegates
  * the memory allocation to `declare_variable`.
  *
- * @param index_declaration The index of the variable's declaration. This is used to 
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
+ * @param index_declaration The index of the variable's declaration. This is used to
  *        retrieve the type information for the variable.
  *
  * @details
- * - The function retrieves the type declaration index associated with the variable 
+ * - The function retrieves the type declaration index associated with the variable
  *   and calls `declare_variable` to allocate memory based on the type.
- * - It ensures that all necessary memory for the variable, including nested structures 
+ * - It ensures that all necessary memory for the variable, including nested structures
  *   or arrays, is allocated.
  */
 void handle_variable_declaration(int index_declaration);
@@ -32,6 +31,8 @@ void handle_variable_declaration(int index_declaration);
  *
  * This function locates the memory cell corresponding to a variable's declaration
  * in the stack frame based on its address and region.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param index_declaration The index of the variable's declaration.
  * @return The `vm_cell` representing the memory location of the variable.
@@ -44,6 +45,8 @@ vm_cell get_variable_cell(int index_declaration);
  * This function resolves the memory address of a structure field and retrieves the
  * corresponding cell from the stack frame.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param struct_access A node representing the structure field access.
  * @return The `vm_cell` representing the memory location of the structure field.
  */
@@ -54,6 +57,8 @@ vm_cell get_struct_cell(Node *struct_access);
  *
  * This function calculates the address of an array element and retrieves the
  * corresponding cell from the stack frame.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param arra_access A node representing the array element access.
  * @return The `vm_cell` representing the memory location of the array element.
@@ -77,6 +82,8 @@ void handle_variable_affectation(int index_declaration, vm_cell cell);
  * This function calculates the address of an array element and updates the
  * corresponding memory cell in the stack frame with the provided value.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param array_index_list A node representing the indices used to access the array element.
  * @param cell The `vm_cell` containing the new value to assign.
  */
@@ -88,6 +95,8 @@ void handle_array_affectation(Node *array_index_list, vm_cell cell);
  * This function resolves the memory address of a structure field and updates
  * the corresponding cell in the stack frame with the provided value.
  *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
+ *
  * @param struct_field_access A node representing the structure field access.
  * @param cell The `vm_cell` containing the new value to assign.
  */
@@ -98,6 +107,8 @@ void handle_structure_affectation(Node* struct_field_access, vm_cell cell);
  *
  * This function places the return value of a function in the `region_value`
  * of the dynamic link stack frame associated with the caller.
+ *
+ * @authors Benguezzou Mohamed, Djibril Benmamar
  *
  * @param cell The `vm_cell` containing the value to return.
  */
