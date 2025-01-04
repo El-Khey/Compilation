@@ -124,7 +124,7 @@ void execute(int region_index) {
     
     pop_region();
     stack_frame stack = pop_frame_from_execution_stack();
-    fprintf_stack_frame(stdout, stack);
+    // fprintf_stack_frame(stdout, stack); //!\\ to print the stack
 }
 
 /**
@@ -150,5 +150,5 @@ void interpret() {
 
     execute_global_program();
 
-    fprintf_vm_stack(stdout); 
+    // fprintf_vm_stack(stdout); //!\\ to print the stack
 }
