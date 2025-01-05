@@ -16,10 +16,9 @@ vm_cell resolve_boolean_expression(Node *expression) {
                 set_error_type(&error, UNINITIALIZED_VARIABLE);
                 set_error_message(
                     &error,
-                    "Uninitialized variable '%s' at %s.\n"
+                    "Uninitialized variable '%s'.\n"
                     "  Ensure the variable is initialized before use.\n",
-                    get_lexeme(expression->index_lexicographic),
-                    get_formatted_location()
+                    get_lexeme(expression->index_lexicographic)
                 );
                 yerror(error);
                 exit(EXIT_FAILURE);

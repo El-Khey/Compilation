@@ -1,0 +1,14 @@
+PROG
+
+var n: int;
+
+proc test() {
+    proc test2() {
+        n := 1;
+    }
+
+    test2();
+}
+
+test();
+print("%d\n", n);

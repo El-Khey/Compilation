@@ -34,7 +34,7 @@ int get_array_address(Node *start_array_access, int base_address) {
             // Resolve the expression for the current index in the current dimension
             vm_cell index_cell = resolve_expression(array_access->child);
             if (index_cell.type != INTEGER) {
-                printf("Error: Index type should be integer, instead got: %d\n", index_cell.type);
+                printf("Error: Index type should be integer, instead got: %s\n", vm_type_to_string(index_cell.type));
                 exit(EXIT_FAILURE);
             }
 

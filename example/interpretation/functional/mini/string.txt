@@ -17,9 +17,9 @@ list[8] := 'r';
 list[9] := 'l';
 list[10] := 'd';
 
-while i < 11 {
+while (i < 11) {
     print("%c", list[i]);
     i := i + 1;
 }
 
-print("\n");
+print("!\n");

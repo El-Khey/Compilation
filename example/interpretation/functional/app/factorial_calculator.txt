@@ -18,27 +18,16 @@ func factorial(num : int) -> int {
         while (i <= num) {
             res := result * i / i;
             if (res != result) {
-                print("Error: Factorial calculation overflowed for %d.\n", num);
-                result := 0; // TODO: Retourner -1 en cas de débordement
+                result := -1; // Retourner -1 en cas de débordement
             }
             result := result * i;
             i := i + 1;
         }
     }
 
-    return result; // Retourne la factorielle calculée
+    return result;
 }
 
-// Procédure pour afficher le résultat
-proc display_factorial(num : int, result : int) {
-    if (result < 0) {
-        print("Factorial calculation failed due to overflow.\n");
-    } else {
-        print("Factorial of %d is %d\n", num, result);
-    }
-}
-
-// Début du programme principal
 print("Enter a number to compute its factorial: ");
 input("%d", n);
 
@@ -47,5 +36,9 @@ if (n < 0) {
     print("Factorial is undefined for negative numbers.\n");
 } else {
     fact := factorial(n);
-    display_factorial(n, fact);
+    if (fact < 0) {
+        print("Factorial calculation failed due to overflow.\n");
+    } else {
+        print("Factorial of %d is %d\n", n, fact);
+    }
 }

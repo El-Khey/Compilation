@@ -12,9 +12,8 @@ vm_cell resolve_arithmetic_operation(int operation, vm_cell left, vm_cell right)
         set_error_type(&error, DIVISION_BY_ZERO);
         set_error_message(
             &error,
-            "Division by zero error at %s.\n"
-            "  Ensure the right operand is not zero for division operations.\n",
-            get_formatted_location()
+            "Division by zero error\n"
+            "  Ensure the right operand is not zero for division operations.\n"
         );
      
         yerror(error);

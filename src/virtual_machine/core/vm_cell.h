@@ -114,4 +114,15 @@ const char *format_cell(void *data);
  */
 void fprintf_vm_cell(FILE *out, vm_cell cell);
 
+static inline char *vm_type_to_string(vm_type type) {
+    switch (type) {
+        case INTEGER: return "int";
+        case REAL: return "float";
+        case BOOLEAN: return "bool";
+        case CHARACTER: return "char";
+        case STRING: return "string";
+        default: return "UNKNOWN";
+    }
+}
+
 #endif // __VM_CELL_H__
