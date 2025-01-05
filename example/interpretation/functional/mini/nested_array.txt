@@ -1,0 +1,40 @@
+PROG
+
+type arr : array[0:10] of int;
+
+type date : struct {
+    day : int;
+    month : int;
+    year : int;
+    tableau : arr;
+} fstruct;
+
+type details : struct {
+    age : int;
+    salary : float;
+    birthday : date;
+} fstruct;
+
+var details : details;
+
+details.age := 33;
+details.salary := 1235.99;
+
+details.birthday.day := 23;
+details.birthday.month := 12;
+details.birthday.year := 202;
+
+details.birthday.tableau[0] := 10;
+details.birthday.tableau[1] := 11;
+details.birthday.tableau[2] := 12;
+details.birthday.tableau[3] := 13;
+details.birthday.tableau[4] := 14;
+details.birthday.tableau[5] := 15;
+details.birthday.tableau[6] := 16;
+details.birthday.tableau[7] := 17;
+details.birthday.tableau[8] := 18;
+details.birthday.tableau[9] := 19;
+details.birthday.tableau[10] := 20;
+
+                        // 202 * 10 + 33 = 2053                 
+details.birthday.year := details.birthday.tableau[0] * details.birthday.year + details.age;

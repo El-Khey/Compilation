@@ -1,5 +1,7 @@
 PROG
 
+var x : int;
+
 type date : struct  {
     jour : int;
     mois : int;
@@ -20,3 +22,5 @@ proc my_proc() {
 
     p.naissance.annee := 21;   // p.naissance.annee field does not exist
 }
+
+x := tab[0]; // tab is not declared

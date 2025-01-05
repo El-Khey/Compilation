@@ -1,12 +1,10 @@
 PROG
-
 var n : int;
+var w : int;
+
+var z : w; // w is a variable not a type so undefined type w
 
 proc my_proc() {
     n := 5;     // OK
-
     x := n;     // x is not declared
 }
-
-// Error
-x := n;  // x is not declared

@@ -6,8 +6,6 @@ type date : struct  {
     annee : float;
 } fstruct;
 
-
-
 func my_func() -> date {        // The function must return a value of a base type
     var x : date;
     return x;                   

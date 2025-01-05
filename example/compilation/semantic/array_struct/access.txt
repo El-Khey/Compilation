@@ -1,0 +1,34 @@
+PROG
+
+type date : struct  {
+    jour : int;
+    mois : int;
+    annee : float;
+} fstruct;
+
+type personne : struct  {
+    numero : int;
+    naissance : date;
+    age : int;
+    taille : float;
+} fstruct;
+
+var p : personne;
+var d : date;
+
+var x : int;
+
+type my_tab : array[0: 10] of int;
+var y : my_tab;
+
+d.jour := 5;
+
+
+// Errors: Two errors on each line
+
+// y[0] is an int, not a struct
+y[0].jour := z[0]; // z is not declared
+
+// p.e does not exist
+p.numero.annee.z := x.annee; // x is not a struct but an int
+

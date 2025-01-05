@@ -1,0 +1,26 @@
+PROG
+
+type personne : struct  {
+    numero : int;
+    age : int;
+    taille : float;
+} fstruct;
+
+type equipe : array[1:3, 1:2] of personne;
+var p : equipe;
+
+func one_int() -> int { return 1; }
+func one_float() -> float { return 1.0; }
+
+func main(a:int, b:float) -> int {
+    return 0;
+}
+
+main(p[0, 1].numero, 2.0);
+main(p[0, 1].numero, one_float() * 4.0 + p[0, 1].taille);
+
+
+// Error
+main(p[0, 1], 2.0);                         // expected int, found array[1:3, 1:2] of personne
+main(one_int(), one_int());                 // test2 returns a float, not an int
+main(p[0, 1].taille, one_float());          // expected float, found int

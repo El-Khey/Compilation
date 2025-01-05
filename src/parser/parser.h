@@ -18,6 +18,8 @@
 #include "../virtual_machine/interpreter/interpreter.h"
 #include "../data/region_table.h"
 
+extern int display_stack;
+
 /**
  * @enum Mode
  * @brief Enumeration of the different modes.

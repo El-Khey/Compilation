@@ -1,0 +1,8 @@
+PROG
+
+var x : int;
+var y : int;
+
+x := y + 4; // Error: Uninitialized variable y
+
+

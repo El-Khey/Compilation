@@ -1,0 +1,7 @@
+PROG
+
+type arr_deux_dim : array[0:1, 0:5] of int;
+var arr : arr_deux_dim;
+
+arr[0, 4] := 0;
+arr[1] := 1;   // Error: Wrong number of dimensions

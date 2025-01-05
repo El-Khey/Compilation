@@ -15,3 +15,7 @@ func main(a:int) -> int {
     x := 45.0; 
     return x + zero(); // This is a float
 }
+
+
+main(); // Error: expected 1 argument, found 0
+main(1, 2); // Error: expected 1 argument, found 2

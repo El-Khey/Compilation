@@ -1,16 +1,20 @@
 #include "parser.h"
 #include "../bin/y.tab.h"
 
+int display_stack;
+
 /**
  * @brief Writes all key data tables to the specified output stream.
- * 
+ *
  * This function is responsible for printing the contents of various compiler/interpreter tables,
  * such as the lexeme table, hash table, declaration table, representation table, and region table.
  * It ensures that the program's internal data structures are accessible for debugging or logging.
- * 
+ *
  * @param out A pointer to the `FILE` stream where the tables will be written.
  */
-static void write_tables_to(FILE* out) {
+static void
+write_tables_to(FILE *out)
+{
     fprintf_lexeme_table(out);
     fprintf_hash_table(out);
     

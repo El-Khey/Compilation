@@ -1,6 +1,8 @@
 #ifndef __INTERPRETER_H__
 #define __INTERPRETER_H__
 
+extern int display_stack;
+
 /**
  * @brief Resolves and executes a list of statements.
  *

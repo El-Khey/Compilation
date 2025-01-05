@@ -12,6 +12,7 @@
     #include <unistd.h>
 
     int yylex();
+    extern int display_stack;
     extern FILE *yyin;
     extern FILE *yyout;
     extern char *yytext;
@@ -156,6 +157,7 @@ static void print_usage(const char *program_name) {
     fprintf(stdout, COLOR_BOLD "Options:\n" COLOR_RESET);
     fprintf(stdout, "  " COLOR_YELLOW "-f <file>      " COLOR_RESET "The input file to be interpreted.\n");
     fprintf(stdout, "  " COLOR_YELLOW "-v             " COLOR_RESET "Enable verbose mode (display symbol tables and AST).\n");
+    fprintf(stdout, "  " COLOR_YELLOW "-s             " COLOR_RESET "Enable stack display.\n");
     fprintf(stdout, "  " COLOR_YELLOW "-h             " COLOR_RESET "Show this help message.\n");
 
     fprintf(stdout, "\n");
@@ -181,9 +183,10 @@ int main(int argc, char **argv) {
     int verbose_mode = 0;  // Flag to enable verbose mode
     char *input_file = NULL;  // File to interpret
     int opt;
+    display_stack = 0;
 
     // Parse command-line options
-    while ((opt = getopt(argc, argv, "f:vh")) != -1) {
+    while ((opt = getopt(argc, argv, "f:vsh")) != -1) {
         switch (opt) {
             case 'f':
                 input_file = optarg;  // Capture the file argument
@@ -194,6 +197,9 @@ int main(int argc, char **argv) {
             case 'h':
                 print_usage(argv[0]);  // Display help message
                 return 0;
+            case 's':
+                display_stack = 1;  // Enable stack display
+                break;
             default:
                 fprintf(stderr, "Error: Unknown option '-%c'\n", optopt);
                 print_usage(argv[0]);

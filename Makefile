@@ -29,7 +29,7 @@ OTHER_SRC     = $(shell find $(SRC_DIR) -name '*.c' ! -path "$(BIN_DIR)/*")
 ALL_OBJ       = $(OTHER_SRC:.c=.o)   
 
 # Executables to generate
-EXECUTABLES  = compiler.exe interpreter.exe 
+EXECUTABLES = compiler.exe interpreter.exe 
 
 # ====================================================== #
 #                B U I L D  T A R G E T S            	 #

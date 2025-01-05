@@ -1,8 +1,0 @@
-PROG
-
-var x : int;
-var y : int;
-
-x := y; // Error: Uninitialized variable y
-
-

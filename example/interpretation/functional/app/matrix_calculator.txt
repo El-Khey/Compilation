@@ -1,6 +1,6 @@
 PROG
 
-type matrix: array[0:9, 0:9] of int;
+type matrix: array[0:3, 0:3] of int;
 
 var mat1: matrix;
 var mat2: matrix;

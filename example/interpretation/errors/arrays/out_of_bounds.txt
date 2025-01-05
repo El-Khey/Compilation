@@ -1,0 +1,7 @@
+PROG
+
+type arr_une_dim : array[0:1] of int;
+var arr : arr_une_dim;
+
+arr[0] := 0;
+arr[2] := 1;    // Error: Index out of bounds

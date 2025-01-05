@@ -20,6 +20,9 @@
         "ast.h": "c",
         "colors.h": "c",
         "scope_tracker.h": "c",
-        "declaration_table.h": "c"
+        "declaration_table.h": "c",
+        "y.tab.h": "c",
+        "parser.h": "c",
+        "hash_table.h": "c"
     }
 }
